@@ -31,3 +31,4 @@ func minArray(numbers []int) int {
     }
     return numbers[left]
 }
+
