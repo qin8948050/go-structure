@@ -16,7 +16,7 @@
 
 使用二分法找最小值，先确定target
 ☆☆left: 因为递增数组，mid>left或者mid<left都无法确定一个明确的情况。
-right: mid<right时，最小值一定在左区间且包含mid;mid>rifht时，最小值一定在右区间且不包含mid。mid=right时，根据递增数组的性质找下一个right
+right: mid<right时，最小值一定在左区间且包含mid;mid>right时，最小值一定在右区间且不包含mid。mid=right时，根据递增数组的性质找下一个right
 */
 
 func minArray(numbers []int) int {
