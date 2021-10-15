@@ -36,17 +36,14 @@ L.right.val = R.left.val L.right.val=R.left.val ：即 LL 的 右子节点 和 R
 算法流程：
 isSymmetric(root) ：
 
-特例处理： 若根节点 root 为空，则直接返回 truetrue 。
+特例处理： 若根节点 root 为空，则直接返回true。
 返回值： 即 recur(root.left, root.right) ;
 recur(L, R) ：
 
 终止条件：
 当 LL 和 RR 同时越过叶节点： 此树从顶至底的节点都对称，因此返回 true；
 当 LL 或 RR 中只有一个越过叶节点： 此树不对称，因此返回 false ；
-当节点 LL 值 \ne 
-
-​
- = 节点 RR 值： 此树不对称，因此返回 falsefalse ；
+当节点 LL 值 = 节点 RR 值： 此树不对称，因此返回 falsefalse ；
 递推工作：
 判断两节点 L.left 和 R.right 是否对称，即 recur(L.left, R.right) ；
 判断两节点 L.right 和 R.left 是否对称，即 recur(L.right, R.left) ；
