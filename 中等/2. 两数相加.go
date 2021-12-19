@@ -65,7 +65,6 @@
     }
     if carry>0{
         curr.Next = &ListNode{Val: carry}
-        curr=curr.Next
     }
     return head
 }
