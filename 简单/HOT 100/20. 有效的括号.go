@@ -28,6 +28,9 @@
 输出：true */
 
 func isValid(s string) bool {
+	if len(s)%2 > 0 {
+		return false
+	}
 	map1 := map[byte]byte{')': '(', ']': '[', '}': '{'}
 	stack := []byte{}
 	for i, v1 := range s {
