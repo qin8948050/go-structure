@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -39,3 +40,5 @@ func BinarySearch(list []int, searchValue int) int {
 	}
 	return mid
 }
+
+
