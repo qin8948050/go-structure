@@ -57,9 +57,7 @@ func longestPalindrome(s string) string {
 	var begin int
 	var end int
 	var maxSize int
-	if length < 2 {
-		return string(s[0])
-	}
+
 	for i := 0; i < length; i++ {
 		//奇数匹配
 		single := Parse(s, i, i)
