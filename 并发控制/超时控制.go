@@ -1,6 +1,6 @@
 //方法一 time.NewTicker
 func method1(){
-	close:=make(chan int)
+	close:=make(chan int,1)
 	cleanup:=time.NewTicker(2*time.Second)
 	defer cleanup.Stop()
 	go func(){
@@ -36,6 +36,7 @@ func method1(){
 		fmt.Println("aaaa",res)
 	}
 }
+
 
 //扩展
 func job(){
